@@ -1,0 +1,4 @@
+#We made static files if we want to share our code with everyone online or in static files the shareable resources and code resides.
+#In project settings; staticfiles settings also resides and we can use the docs of static files from settings.
+#Remember: We should not put sensitive information in static files bcz it can form scurity loophole. We can put some stylying,css files in it.
+This is static file.

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+    
+{% block body %}
+<div class="container-fluid px-0 mb-3">
+    <img src="/static/img/tele.jpg" class= "d-block w-100" alt="..." width="1200" height="569">
+</div>
+  <h2 style="position: absolute; top: 90px; left: 10px">Contact Cyber Brains</h2>
+  <div class="container-fluid mb-3">
+  <div class="row g-5 mb">
+    <div class="col-md-7 col-lg-8">
+      <h4 class="text-center">Contact Form</h4>
+        <form method="post" action="/contact">
+        {% csrf_token %}
+
+        <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+          {% comment %} <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+          </div> {% endcomment %}
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+          </div>
+          
+          <div class="form-group">
+            <label for="desc">Tell me about what you want to contact me for</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+          </div>
+          <br>
+          
+          <button class=" btn btn-primary"  type="submit" >Submit</button>
+          
+        </form>
+</div>
+{% endblock body %}

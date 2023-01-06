@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0 " >
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.bluefin.com/wp-content/uploads/2018/11/AI-Cybersecurity.jpg" class="d-block w-100" alt="IMAGE" width='600' height='600'>
+        <div class="carousel-caption d-none d-md-block">
+          <h5><strong>HELLO WORLD!</strong></h5>
+          <p>This is Cyber Brains</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.dgroove.it/wp-content/uploads/2020/09/cybersecurity.jpg" class="d-block w-100" alt="IMAGE" width='600' height='600'>
+        <div class="carousel-caption d-none d-md-block" >
+          <h5><b>"Security is not something to buy, it's something you do, and it takes talented people to do it right."</b></h5>
+          <p><i>_Unknown</i></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/suppliers/cybersecurity-masthead.jpg.pc-adaptive.full.medium.jpeg" class="d-block w-100" alt="IMAGE" width='600' height='600'>
+        <div class="carousel-caption d-none d-md-block">
+          <h5><strong>"One single vulnerability is all an attacker needs."</strong></h5>
+          <p><i>Window Snyder,<br>Cheif Security Officer, Fastly</i></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+{% comment %} Added an Album here {% endcomment %}
+<div class="container my-3">
+<h1 class="my-4 text-center">Select which article you want to read about</h1>
+<style='--bs-card-height:1px'></style>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://d3lu3qnchgm3nw.cloudfront.net/AcuCustom/Sitename/DAM/028/1200x800__mainpicwp_41.png" class="d-block w-100 " alt="...">
+        <div class="card-body">
+          <p class="card-text">Malware Attack:<br>“Malware” refers to malicious software viruses including worms, spyware, ransomware, adware, and trojans. It can be described as unwanted software that is installed in your system without your consent.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">Learn more about</small>
+            <div class="btn-group">
+              {% comment %} <a href="/about" class="button1">Button</a> {% endcomment %}
+              <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="/about">Malware</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://www.technologyvisionaries.com/wp-content/uploads/2020/01/bigstock-Data-Phishing-Hacker-Attack-t-319270852-scaled.jpg" class="d-block w-100 " alt="..." width='359.328' height='239.547'>
+        <div class="card-body">
+          <p class="card-text">Phishing Attack:<br>Phishing attack is a type of social engineering attack wherein an attacker impersonates to be a trusted contact and sends the victim fake mails.  It combines social engineering and technical trickery.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">Learn more about</small>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="/about">Phishing</a></button>
+              {% comment %} <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> {% endcomment %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="http://cmitsolutions.com/denton/wp-content/uploads/sites/177/2018/07/password_security_feature.jpg" class="d-block w-100 " alt="..." width='359.328' height='239.547'>
+        <div class="card-body">
+          <p class="card-text">Password Attack:<br>Password attack is a form of attack wherein a hacker cracks your password with various programs and password cracking tools like Aircrack, Cain, Abel, John the Ripper, Hashcat, etc.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">Learn more about</small>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="/about">Password</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://130e178e8f8ba617604b-8aedd782b7d22cfe0d1146da69a52436.ssl.cf1.rackcdn.com/massive-freepik-data-breach-tied-to-sql-injection-attack-showcase_image-1-a-14880.jpg" class="d-block w-100 " alt="..." width='359.328' height='239.547'>
+
+        <div class="card-body">
+          <p class="card-text">SQL Injection Attack:<br>SQL injection has become a common issue with database-driven websites. A Structured Query Language (SQL) injection attack occurs on a database-driven website when the hacker manipulates a standard SQL query.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">Learn more about</small>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="/about">SQL Injection</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://www.thesslstore.com/blog/wp-content/uploads/2018/11/bigstock-Hacking-And-Phishing-Concept-263466271.jpg" class="d-block w-100 " alt="..." width='359.328' height='239.547'>
+
+        <div class="card-body">
+          <p class="card-text">Man-in-the-Middle Attack:<br>In Man-in-the-Middle Attack (MITM), an attacker comes in between a two-party communication, i.e., the attacker hijacks the session between a client and host. So, hackers steal and manipulate data.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">Learn more about</small>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="/about">MITM</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://blog.radware.com/wp-content/uploads/2019/09/5StepsDDoS-960x640.jpg" class="d-block w-100 " alt="..." width='359.328' height='239.547'>
+
+        <div class="card-body">
+          <p class="card-text">Denial-of-Service Attack: <br>A denial-of-service (DDoS) attack overwhelms a system’s resources. The attackers target systems, servers, or networks and flood them with traffic to exhaust their resources and bandwidth.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <small class="text-muted">Learn more about</small>
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="/about">DDOS</a></button>
+            </div>
+          </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
+
